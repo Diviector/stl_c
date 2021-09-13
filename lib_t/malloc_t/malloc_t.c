@@ -1,6 +1,5 @@
 #ifdef T
-
-#include "malloc_t.h"
+#include "../../template.h"
 #include <stdlib.h>
 
 T* TEMPLATE(malloc, T)(size_t size) {

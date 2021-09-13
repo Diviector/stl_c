@@ -1,6 +1,6 @@
 #ifdef T
-
-#include "malloc_matrix_t.h"
+#include "../../template.h"
+#include "../../template_types.h"
 #include "../malloc_t/malloc_t_all.h"
 
 T** TEMPLATE(malloc_matrix, T)(int m, int n) {
@@ -15,7 +15,7 @@ void TEMPLATE(free_matrix, T)(T** matrix, int m) {
     for (int row = 0; row < m; ++row) {
         TEMPLATE(free, T)(matrix[row]);
     }
-    TEMPLATE(free, T_ptr_ptr)(matrix);
+    TEMPLATE(free, PTR(T))(matrix);
 }
 
 #endif // T
