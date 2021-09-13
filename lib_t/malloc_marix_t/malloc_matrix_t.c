@@ -1,7 +1,11 @@
-#ifdef T
 #include "../../template.h"
-#include "../../template_types.h"
 #include "../malloc_t/malloc_t_all.h"
+
+#ifndef T
+#define T int
+#endif
+
+#ifdef T
 
 T** TEMPLATE(malloc_matrix, T)(int m, int n) {
     T** matrix = TEMPLATE(malloc, PTR(T))(m);
