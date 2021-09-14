@@ -1,5 +1,3 @@
-#include "../../template_types.h"
-#include "../../template.h"
 #include "malloc_t_all.h"
 
 #ifdef T
@@ -22,7 +20,3 @@
 
 #define T int_2p
 #include "malloc_t.c"
-
-#ifdef T
-#undef T
-#endif // T

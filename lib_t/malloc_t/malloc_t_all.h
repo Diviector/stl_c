@@ -24,8 +24,4 @@
 #define T int_2p
 #include "malloc_t.h"
 
-#ifdef T
-#undef T
-#endif // T
-
 #endif //MALLOC_T_ALL_H

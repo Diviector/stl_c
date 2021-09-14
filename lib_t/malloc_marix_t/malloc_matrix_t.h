@@ -1,7 +1,3 @@
-#ifndef T
-#define T int
-#endif
-
 #ifdef T
 #include "../../template.h"
 
